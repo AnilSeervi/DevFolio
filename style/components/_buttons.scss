@@ -10,6 +10,9 @@
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
   &:hover {
     box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #ffffff;
+    @include respond(phone) {
+      box-shadow: none;
+    }
   }
   &::after {
     content: "";
@@ -130,6 +133,8 @@
   }
 
   &:hover {
+    box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #ffffff;
+
     &::after {
       transform: translate(-12%, -30%) rotate(45deg);
     }
