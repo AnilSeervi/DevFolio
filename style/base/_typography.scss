@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+h1 {
+  font-weight: 700;
+}
+
+p,
+a {
+  font-size: $default-font-size;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.section-title {
+  margin-bottom: 4.5rem;
+  font-size: $big-font-size;
+  text-transform: uppercase;
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
+}
+
+.dark-blue-color {
+  color: $dark-blue-text;
+}
+
+.text-color-main {
+  margin-left: 1rem;
+  @include supportColorForIE11();
+
+  // Responsive text purple style
+
+  &:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+  @include respond(phone) {
+    margin: 0;
+    background-image: none;
+    -webkit-text-fill-color: $secondary-color;
+  }
+}

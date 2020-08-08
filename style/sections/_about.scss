@@ -1,0 +1,62 @@
+#about {
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  color: $white-color;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  @include container();
+
+  .about-wrapper {
+    @include respond(phone) {
+      padding-bottom: 5rem;
+    }
+    grid-template-columns: 1fr 1fr;
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+    &__image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 300px;
+        @include respond(phone) {
+          width: 250px;
+        }
+        @include respond(phone-xs) {
+          width: 100%;
+        }
+      }
+
+      @include respond(tab-land) {
+        height: 100%;
+      }
+      @include respond(tab-port-sm) {
+        padding-bottom: 6.4rem;
+      }
+    }
+    &__info {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+      text-align: left;
+      @include respond(tab-port-sm) {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}

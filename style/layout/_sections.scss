@@ -1,0 +1,29 @@
+// Section
+section {
+  padding: 5rem 0rem;
+
+  @include respond(phone) {
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.row {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+  padding: 0 1.5rem;
+  @include respond(phone) {
+    padding: 0;
+  }
+  & p + p {
+    margin-top: 1rem;
+  }
+  & span {
+    margin-top: 2rem;
+  }
+}
