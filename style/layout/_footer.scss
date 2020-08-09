@@ -1,10 +1,6 @@
 .footer {
   background-color: $dark-grey;
-  color: $white-color;
   padding: 4.8rem 0;
-  @include respond(phone) {
-    border: 0px;
-  }
   @include container();
   &__text {
     color: darken($white-color, 50%);
@@ -12,14 +8,12 @@
     a {
       color: darken($white-color, 50%);
       font-size: 1.3rem;
-      transition: all 0.4s;
+      transition: all 0.2s ease-in-out;
       display: inline-block;
-      background-color: $dark-grey;
+      // background-color: $dark-grey;
       &:hover,
       &:active {
         color: $primary-color;
-        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       }
     }
   }
@@ -35,6 +29,7 @@
 .social-links {
   display: flex;
   justify-content: center;
+
   a {
     display: flex;
     flex-direction: column;
@@ -44,10 +39,12 @@
     width: 5rem;
     height: 5rem;
     margin: $default-font-size $default-font-size;
-    transition: all 0.3s ease-in-out;
-
+    transition: all ease 0.2s;
+    i {
+      transition: all ease-in-out 0.2s;
+    }
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.1) translateY(-2px);
       .fa-twitter {
         color: #00acee;
       }
@@ -67,7 +64,7 @@
 .back-to-top i {
   color: $white-color;
   margin: 1rem 0 $default-font-size;
-  transition: all 0.2s ease-in;
+  transition: all 200ms ease;
 
   &:hover {
     transform: translateY(-2px);

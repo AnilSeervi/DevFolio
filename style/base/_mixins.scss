@@ -54,36 +54,26 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     padding: 0 1.5rem;
     margin: 0 auto;
     max-width: 1140px;
-
     @include respond(tab-land) {
       max-width: 960px;
       width: 100%;
     }
     @include respond(tab-port) {
-      max-width: 960px;
+      max-width: 720px;
       width: 100%;
+      justify-content: center;
     }
     @include respond(tab-port-sm) {
       max-width: 720px;
       width: 100%;
     }
     @include respond(phone) {
+      padding: 0rem $default-font-size;
+
       max-width: 540px;
       width: 100%;
     }
-    @include respond(tab-port) {
-      justify-content: center;
-    }
-    @include respond(phone) {
-      padding: 0rem $default-font-size;
-    }
   }
-}
-// Border White Mixin
-@mixin section-borders {
-  border: 1.5rem solid #fff;
-  border-top: 0;
-  border-bottom: 0;
 }
 
 @mixin supportColorForIE11 {

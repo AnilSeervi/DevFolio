@@ -18,13 +18,12 @@
   @include container();
 
   .about-wrapper {
-    @include respond(phone) {
-      padding-bottom: 5rem;
-    }
     grid-template-columns: 1fr 1fr;
     @include respond(phone) {
+      padding-bottom: 5rem;
       grid-template-columns: 1fr;
     }
+
     &__image {
       display: flex;
       height: 100%;

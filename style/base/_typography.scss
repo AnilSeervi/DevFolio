@@ -33,12 +33,6 @@ a:hover {
   margin-left: 1rem;
   @include supportColorForIE11();
 
-  // Responsive text purple style
-
-  &:hover {
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-  }
   @include respond(phone) {
     margin: 0;
     background-image: none;
