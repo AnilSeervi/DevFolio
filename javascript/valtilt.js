@@ -59,9 +59,9 @@ ScrollReveal().reveal(".about-wrapper__image", {
 
 ScrollReveal().reveal(".about-wrapper__info", {
   ...defaultProps,
-  distance: "50px",
-  delay: 1000,
-  origin: window.innerWidth > 768 ? "left" : "bottom",
+  distance: "100px",
+  delay: 800,
+  origin: window.innerWidth > 768 ? "left" : "top",
   scale: 1,
 });
 
@@ -75,7 +75,7 @@ ScrollReveal().reveal(".project-wrapper__text", {
 
 ScrollReveal().reveal(".project-wrapper__image", {
   ...defaultProps,
-  delay: 1000,
+  delay: window.innerWidth > 768 ? 1000 : 100,
   origin: window.innerWidth > 768 ? "right" : "bottom",
   scale: 0,
 });
