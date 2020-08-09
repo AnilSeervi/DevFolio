@@ -68,8 +68,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       width: 100%;
     }
     @include respond(phone) {
-      padding: 0rem $default-font-size;
-
       max-width: 540px;
       width: 100%;
     }

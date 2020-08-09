@@ -30,13 +30,8 @@
       align-items: center;
       justify-content: center;
       img {
-        width: 300px;
-        @include respond(phone) {
-          width: 250px;
-        }
-        @include respond(phone-xs) {
-          width: 100%;
-        }
+        max-width: 300px;
+        width: 100%;
       }
 
       @include respond(tab-land) {
