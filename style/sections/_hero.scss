@@ -33,9 +33,7 @@
     margin-bottom: 3.2rem;
     text-align: left;
     span {
-      &:hover {
-        box-shadow: none;
-      }
+      display: inline-block;
     }
 
     @include respond(tab-land) {
