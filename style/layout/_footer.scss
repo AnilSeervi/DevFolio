@@ -1,16 +1,14 @@
 .footer {
   background-color: $dark-grey;
   padding: 4.8rem 0;
-  @include container();
   &__text {
-    color: darken($white-color, 50%);
     font-size: 1.3rem;
+    color: darken($white-color, 50%);
     a {
-      color: darken($white-color, 50%);
       font-size: 1.3rem;
+      color: darken($white-color, 50%);
       transition: all 0.2s ease-in-out;
       display: inline-block;
-      // background-color: $dark-grey;
       &:hover,
       &:active {
         color: $primary-color;
@@ -31,11 +29,11 @@
   justify-content: center;
 
   a {
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: $white-color;
-    font-size: 3rem;
     width: 5rem;
     height: 5rem;
     margin: $default-font-size $default-font-size;

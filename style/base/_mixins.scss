@@ -47,33 +47,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   }
 }
 
-// container mixin
-@mixin container {
-  .container {
-    width: 100%;
-    padding: 0 1.5rem;
-    margin: 0 auto;
-    max-width: 1140px;
-    @include respond(tab-land) {
-      max-width: 960px;
-      width: 100%;
-    }
-    @include respond(tab-port) {
-      max-width: 720px;
-      width: 100%;
-      justify-content: center;
-    }
-    @include respond(tab-port-sm) {
-      max-width: 720px;
-      width: 100%;
-    }
-    @include respond(phone) {
-      max-width: 540px;
-      width: 100%;
-    }
-  }
-}
-
 @mixin supportColorForIE11 {
   // Fall for text-gradient not supported in IE11
   color: $secondary-color;

@@ -15,7 +15,6 @@
     -webkit-clip-path: none;
     clip-path: none;
   }
-  @include container();
 
   .about-wrapper {
     grid-template-columns: 1fr 1fr;

@@ -7,7 +7,7 @@
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
-  margin-top: -11rem;
+  margin-top: -15rem;
   margin-bottom: -1px;
   color: $white-color;
 
@@ -17,7 +17,6 @@
     -webkit-clip-path: none;
     clip-path: none;
   }
-  @include container();
 
   .contact-wrapper {
     margin-top: 3.2rem;

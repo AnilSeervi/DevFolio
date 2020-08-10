@@ -25,7 +25,6 @@
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
-  @include container();
 
   .hero-title {
     font-size: 5.6rem;
