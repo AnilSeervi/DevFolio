@@ -8,7 +8,7 @@
     padding-top: 5rem;
   }
   @include respond(phone) {
-    padding-bottom: 0;
+    padding-bottom: 1px;
   }
   .project-wrapper {
     margin-bottom: 15rem;

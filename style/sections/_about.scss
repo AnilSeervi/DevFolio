@@ -31,13 +31,16 @@
       img {
         max-width: 300px;
         width: 100%;
+        @include respond(phone) {
+          width: 90%;
+        }
       }
 
       @include respond(tab-land) {
         height: 100%;
       }
       @include respond(tab-port-sm) {
-        padding-bottom: 6.4rem;
+        padding-bottom: 4rem;
       }
     }
     &__info {
