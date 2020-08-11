@@ -32,7 +32,7 @@ ScrollReveal().reveal(".section-title", {
 ScrollReveal().reveal(".about-wrapper__image", {
   ...defaultProps,
   delay: 600,
-  scale: 0,
+  scale: 0.5,
 });
 
 ScrollReveal().reveal(".about-wrapper__info", {
@@ -45,15 +45,14 @@ ScrollReveal().reveal(".about-wrapper__info", {
 /* Projects Section */
 ScrollReveal().reveal(".project-wrapper__text", {
   ...defaultProps,
-  distance: window.innerWidth > 768 ? "400px" : "30px",
   delay: 600,
   origin: window.innerWidth > 768 ? "left" : "bottom",
 });
 
 ScrollReveal().reveal(".project-wrapper__image", {
   ...defaultProps,
-  distance: window.innerWidth > 768 ? "800px" : "30px",
   delay: 600,
+  scale: 0.9,
   origin: window.innerWidth > 768 ? "right" : "bottom",
 });
 
