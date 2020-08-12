@@ -66,5 +66,4 @@ ScrollReveal().reveal(".fa", {
   ...defaultProps,
   delay: 500,
   interval: 100,
-  useDelay: "onload",
 });

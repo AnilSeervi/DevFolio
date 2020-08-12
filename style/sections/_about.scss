@@ -29,11 +29,8 @@
       align-items: center;
       justify-content: center;
       img {
-        max-width: 300px;
+        max-width: 350px;
         width: 100%;
-        @include respond(phone) {
-          width: 90%;
-        }
       }
 
       @include respond(tab-land) {
