@@ -6,6 +6,7 @@ const defaultProps = {
   desktop: true,
   mobile: true,
 };
+// Hero Section
 ScrollReveal().reveal(".hero-title", {
   ...defaultProps,
   delay: 500,
@@ -21,6 +22,11 @@ ScrollReveal().reveal(".hero-cta", {
   ...defaultProps,
   delay: 1200,
   origin: window.innerWidth > 768 ? "left" : "bottom",
+});
+ScrollReveal().reveal(".scroll-down-link", {
+  ...defaultProps,
+  delay: 2000,
+  origin: "top",
 });
 
 /* About Section */

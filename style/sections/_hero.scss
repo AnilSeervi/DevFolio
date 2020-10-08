@@ -13,9 +13,8 @@
   right: 0;
   z-index: -1;
   line-height: 1.2;
-  & .container {
-    animation: hidden 1000ms linear forwards;
-  }
+  animation: hidden 1000ms linear forwards;
+
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
   /* background: url("/src/assets/[your-image].png");
@@ -71,6 +70,37 @@
     }
   }
 }
+.scroll-down-link {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  &::before,
+  &::after {
+    height: 10px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid $secondary-color;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: none;
+    border-left: none;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  &::after {
+    top: 30%;
+    animation-delay: 0.3s;
+  }
+}
 
 @keyframes hidden {
   0% {
@@ -81,5 +111,20 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
   }
 }
