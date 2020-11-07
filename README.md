@@ -73,7 +73,23 @@ Press _Ctrl+Shift+P_ or _F1_ to Show Command Palette, Search for **Watch Sass** 
 
 ### Step 1 - STRUCTURE
 
-Open `index.html` and fill your information, they are 5 sections:
+Open `index.html` and fill your information, they are 6 sections:
+
+### Head Section
+
+- Add a title to your Portfolio website within the `<title>` tag.
+- Add some keywords and description to your Portfolio website as directed in the `index.html` file.
+
+```html
+<!-- Title: add your Portfolio websites's title here -->
+<title>[Your name here] | Developer</title>
+<!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+<meta name="keywords" content="[username], [name], skill" />
+<!-- Improve your SEO by adding a small descrption of you -->
+<meta name="description" content="[Your name here] | Developer" />
+```
+
+- Remove google analytics tag before pushing it to GitHub.
 
 ### Hero Section
 
