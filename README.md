@@ -1,6 +1,6 @@
 <h1 align="center"> ⚡️ DevFolio ⚡️</h1>
 
-[![Github](https://img.shields.io/github/license/anilseervi/DevFolio?color=%2312c2e9&style=for-the-badge)](https://github.com/AnilSeervi/DevFolio/blob/master/README.md) ![Github Stars](https://img.shields.io/github/stars/anilseervi/DevFolio?color=%23c471ed&style=for-the-badge) ![Github forks](https://img.shields.io/github/forks/anilseervi/DevFolio?color=%23f64f59&style=for-the-badge)
+[![Github](https://img.shields.io/github/license/anilseervi/DevFolio?color=%2312c2e9&logo=github&style=for-the-badge)](https://github.com/AnilSeervi/DevFolio/blob/master/README.md) ![Github Stars](https://img.shields.io/github/stars/anilseervi/DevFolio?color=%23c471ed&style=for-the-badge) ![Github forks](https://img.shields.io/github/forks/anilseervi/DevFolio?color=%23f64f59&style=for-the-badge) ![Repo Dependencies](https://img.shields.io/badge/Dependencies-0-%23f953c6?style=for-the-badge&logo=npm)
 
 ## A minimal portfolio template for Developers!
 
@@ -27,7 +27,7 @@ You'll need [VSCode](https://code.visualstudio.com/) and [Git](https://git-scm.c
 
 You'll also need these two extensions [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) installed in your VSCode.
 
-Press F1 and Search for _Open Settings(JSON)_ and paste the below code before the closing braces( } ).
+Press F1 and Search for _Open Settings(JSON)_ and paste the below code before the closing braces( `}` ).
 
 ```json
 "liveSassCompile.settings.generateMap": false,
@@ -46,7 +46,7 @@ Press F1 and Search for _Open Settings(JSON)_ and paste the below code before th
 
 ## How To Use 🔧
 
-In VSCode, Open the terminal( Ctrl+` ) and clone the DevFolio Repo.
+In VSCode, Open the terminal(`Ctrl+`\` ) and clone the DevFolio Repo.
 
 ```bash
 # Clone this repository
@@ -64,7 +64,8 @@ Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
 <h3 align="center">
 OR
 </h3>
-Press *Ctrl+Shift+P* or *F1* to Show Command Palette, Search for **Watch Sass** and turn it on. Also search for **Open With Live Server** and turn it on. Doing this will watch all your Sass files for changes and will open the website in your browser to preview live.
+
+Press _Ctrl+Shift+P_ or _F1_ to Show Command Palette, Search for **Watch Sass** and turn it on. Also search for **Open With Live Server** and turn it on. Doing this will watch all your Sass files for changes and will open the website in your browser to preview live.
 
 ---
 
@@ -244,7 +245,7 @@ Change the color theme of the website ( choose 2 colors to create a gradient ):
 
 Go to `style/base/_variables.scss` and only change the values on these properties `$main-color` and `$secondary-color` to your prefered HEX color.
 
-Save the `.scss` file so that the Live Sass Compiler extension compiles it to `.css`.
+Save the `.scss` file so that the **Live Sass Compiler** extension compiles it to `.css`.
 
 ```scss
 // Default values
@@ -255,3 +256,53 @@ $secondary-color: #5b86e5;
 **NOTE**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#Scooter)
 
 ---
+
+- You can clear the README.md file and add you own readme to it.
+- Also you don't need to push the `style` folder, so you can add `style` to `.gitignore` file to ignore it while pushing it to the repo.
+
+---
+
+## Deployment 📦
+
+- Head to your GitHub account and create a new repo. And set a new remote for our template repo.
+
+  Note: remote URL will be different.
+
+  ```bash
+  # set a new remote
+  $ git remote add origin https://github.com/user.repo.git
+  ```
+
+- Now commit all your changes with a commit message and push the code to your newly created repo.
+
+  ```bash
+  # commit changes
+  $ git commit -m 'created my portfolio'
+  # push the changes
+  $ git push -u origin master
+  ```
+
+- Refresh your repo page and head to the settings tab. Now scroll down till you see GitHub Pages. In the Source section select the branch to be master and save it!
+- Voilà your Portfolio should be live at `https://username.github.io/repoName/`
+
+## Technologies used 🛠️
+
+- [Sass](https://sass-lang.com/documentation) - CSS extension language
+- [ScrollReveal.js](https://scrollrevealjs.org/) - JavaScript library
+- [Tilt.js](https://gijsroge.github.io/tilt.js/) - JavaScript tiny parallax library
+
+## Authors
+
+- **Anil Seervi** - [https://github.com/anilseervi](https://github.com/anilseervi)
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments 🎁
+
+I was motivated and inspired while learning [ZTM: Complete Web Developer](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/) to create a simpler version of [simplefolio](https://github.com/cobidev/simplefolio) for those who didn't know node and packages.
+
+---
+
+<h2 align="center">Have Fun Creating Your Own Portfolio Website.</h2>
