@@ -262,7 +262,7 @@ Have fun creating your portfolio on this template!!! -->
         </div>
         <hr />
         <p class="footer__text">
-          &copy; 2020 - Template by
+          &copy; <span id="year"></span> - Template by
           <a
             href="https://github.com/AnilSeervi"
             target="_blank"
@@ -273,6 +273,9 @@ Have fun creating your portfolio on this template!!! -->
       </div>
     </footer>
     <!-- END Footer Section -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
   </body>
