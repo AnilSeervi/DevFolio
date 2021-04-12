@@ -58,6 +58,7 @@ $ cd DevFolio
 # Remove current origin repository
 $ git remote remove origin
 ```
+And delete the `.github` folder as you don't need it.
 
 Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
 
