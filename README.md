@@ -2,7 +2,12 @@
 
 [![Github](https://img.shields.io/github/license/anilseervi/DevFolio?color=%2312c2e9&logo=github&style=for-the-badge)](https://github.com/AnilSeervi/DevFolio/blob/master/README.md) ![Github Stars](https://img.shields.io/github/stars/anilseervi/DevFolio?color=%23c471ed&style=for-the-badge) ![Github forks](https://img.shields.io/github/forks/anilseervi/DevFolio?color=%23f64f59&style=for-the-badge) ![Repo Dependencies](https://img.shields.io/badge/Dependencies-0-%23f953c6?style=for-the-badge&logo=npm)
 
-## A minimal portfolio template for Developers!
+## A Minimal Portfolio Template for Developers!
+
+<h2 align="center">
+  <img src="assets/devfolio.gif" alt="Devfolio" width="600px" />
+  <br>
+</h2>
 
 ## Features
 
@@ -13,7 +18,7 @@
 ⚡️ Valid HTML5 & CSS3\
 ⚡️ Well organized documentation
 
-To view a demo example, **[Click Here](https://anilseervi.github.io/DevFolio/)**\
+To view a demo example, **[Click Here](https://devfolio.js.org)**\
 To view a live example, **[Click Here](https://anilseervi.github.io/Portfolio/)**\
 To view live example repo, **[Click Here](https://github.com/AnilSeervi/Portfolio/)**
 
@@ -58,6 +63,7 @@ $ cd DevFolio
 # Remove current origin repository
 $ git remote remove origin
 ```
+
 And delete the `.github` folder as you don't need it.
 
 Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
@@ -159,7 +165,7 @@ Open `index.html` and fill your information, they are 6 sections:
 ---
 
 - Inside `<div>` tag with class-name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url on `href` attribute of `<a>` tag.
-- Recommended size for project image (1366 x 767px), your project image must live on `assets/` folder.
+- Recommended size for project image (1366 x 767px), your project image must live in `assets/` folder. You can remove the default images and replace them with yours.
 
 ```html
 <!--Projects Section-->
@@ -276,6 +282,7 @@ $secondary-color: #5b86e5;
 
 - You can clear the README.md file and add you own readme to it.
 - Also you don't need to push the `style` folder, so you can add `style` to `.gitignore` file to ignore it while pushing it to the repo.
+- Delete the file `CNAME` before you push it.
 
 ---
 
