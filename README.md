@@ -16,7 +16,8 @@
 ⚡️ Custom SCSS\
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
-⚡️ Well organized documentation
+⚡️ Well organized documentation\
+⚡ Fast and SEO Optimized
 
 To view a demo example, **[Click Here](https://devfolio.js.org)**\
 To view a live example, **[Click Here](https://anilseervi.github.io/Portfolio/)**\
@@ -80,7 +81,7 @@ Press _Ctrl+Shift+P_ or _F1_ to Show Command Palette, Search for **Watch Sass** 
 
 ### Step 1 - STRUCTURE
 
-Open `index.html` and fill your information, they are 6 sections:
+Open `index.html` and fill your information, there are 6 sections:
 
 ### Head Section
 
@@ -317,7 +318,7 @@ $secondary-color: #5b86e5;
 
 ## Authors
 
-- **Anil Seervi** - [https://github.com/anilseervi](https://github.com/anilseervi)
+- **Anil Seervi** - [https://github.com/AnilSeervi](https://github.com/AnilSeervi)
 
 ## License 📄
 
