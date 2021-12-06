@@ -1,22 +1,21 @@
 <h1 align="center"> ⚡️ DevFolio ⚡️</h1>
 
-[![Github](https://img.shields.io/github/license/anilseervi/DevFolio?color=%2312c2e9&logo=github&style=for-the-badge)](https://github.com/AnilSeervi/DevFolio/blob/master/README.md) ![Github Stars](https://img.shields.io/github/stars/anilseervi/DevFolio?color=%23c471ed&style=for-the-badge) ![Github forks](https://img.shields.io/github/forks/anilseervi/DevFolio?color=%23f64f59&style=for-the-badge) ![Repo Dependencies](https://img.shields.io/badge/Dependencies-0-%23f953c6?style=for-the-badge&logo=npm)
+[![Github](https://img.shields.io/github/license/anilseervi/DevFolio?color=%2312c2e9&logo=github&style=for-the-badge)](https://github.com/AnilSeervi/DevFolio/blob/master/README.md) ![Github Stars](https://img.shields.io/github/stars/anilseervi/DevFolio?color=%23c471ed&style=for-the-badge) ![Github forks](https://img.shields.io/github/forks/anilseervi/DevFolio?color=%23f64f59&style=for-the-badge) ![GitHub deployments](https://img.shields.io/github/deployments/anilseervi/DevFolio/github-pages?label=Deploy&logo=github&style=for-the-badge)
 
-## A Minimal Portfolio Template for Developers!
+## A Modern Portfolio Template for Developers!
 
 <h2 align="center">
-  <img src="assets/devfolio.gif" alt="Devfolio" width="600px" />
-  <br>
+  <img src="assets/devfolio.gif" alt="Devfolio" width="1905px" />
 </h2>
 
 ## Features
 
 ⚡️ Modern UI Design + Reveal Animations + Hover Effects\
+⚡️ Well organized documentation\
 ⚡️ One Page Layout\
 ⚡️ Custom SCSS\
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
-⚡️ Well organized documentation\
 ⚡ Fast and SEO Optimized
 
 To view a demo example, **[Click Here](https://devfolio.js.org)**\
