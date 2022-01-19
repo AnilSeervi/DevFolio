@@ -7,18 +7,61 @@ GitHub repo: https://github.com/AnilSeervi/DevFolio
 README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
 -
 Have fun creating your portfolio on this template!!! -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Title: add your Portfolio websites's title here -->
     <title>[Your name here] | Developer</title>
+
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
+
     <!-- Improve your SEO by adding a small descrption of you -->
     <meta name="description" content="[Your name here] | Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="[Your name here] | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
     <!-- link tags -->
     <link rel="stylesheet" href="./css/main.css" />
     <link
@@ -31,6 +74,7 @@ Have fun creating your portfolio on this template!!! -->
       type="text/javascript"
       src="./javascript/scrollveal.js"
     ></script>
+
     <!-- Remove Google Analytics once you have your portfolio website set-up -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -61,7 +105,7 @@ Have fun creating your portfolio on this template!!! -->
           <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
         </p>
       </section>
-      <a href="#about" class="scroll-down-link">
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
         <div class="scroll-down"></div
       ></a>
     </div>
@@ -108,7 +152,7 @@ Have fun creating your portfolio on this template!!! -->
           <h2 class="section-title dark-blue-text">Projects</h2>
 
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Project Title</h3>
               <p class="project-wrapper__text-info">
@@ -142,11 +186,11 @@ Have fun creating your portfolio on this template!!! -->
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Project Title</h3>
               <p class="project-wrapper__text-info">
@@ -180,11 +224,11 @@ Have fun creating your portfolio on this template!!! -->
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Project Title</h3>
               <p class="project-wrapper__text-info">
@@ -218,7 +262,7 @@ Have fun creating your portfolio on this template!!! -->
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
         </div>
       </div>
@@ -240,23 +284,48 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Footer Section -->
     <footer class="footer">
       <div class="container">
-        <a href="#hero" class="back-to-top">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a href="#!" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
             <i class="fa fa-twitter"></i>
           </a>
-          <a href="#!" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
             <i class="fa fa-instagram"></i>
           </a>
-          <a href="#!" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="codepen"
+          >
             <i class="fa fa-codepen"></i>
           </a>
-          <a href="#!" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
             <i class="fa fa-linkedin"></i>
           </a>
-          <a href="#!" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
             <i class="fa fa-github"></i>
           </a>
         </div>
@@ -273,6 +342,7 @@ Have fun creating your portfolio on this template!!! -->
       </div>
     </footer>
     <!-- END Footer Section -->
+
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
