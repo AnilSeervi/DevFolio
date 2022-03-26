@@ -32,7 +32,7 @@ You'll need [VSCode](https://code.visualstudio.com/) and [Git](https://git-scm.c
 
 You'll also need these two extensions [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) installed in your VSCode.
 
-Press F1 and Search for _Open Settings(JSON)_ and paste the below code before the closing braces( `}` ).
+Press <kbd>F1</kbd> and Search for _Open Settings(JSON)_ and paste the below code before the closing braces( `}` ).
 
 ```json
 "liveSassCompile.settings.generateMap": false,
@@ -51,7 +51,7 @@ Press F1 and Search for _Open Settings(JSON)_ and paste the below code before th
 
 ## How To Use 🔧
 
-In VSCode, Open the terminal(`Ctrl+`\` ) and clone the DevFolio Repo.
+In VSCode, Open the terminal(<kbd>Ctrl</kbd>+<kbd>\\</kbd> ) and clone the DevFolio Repo.
 
 ```bash
 # Clone this repository
@@ -64,7 +64,7 @@ $ cd DevFolio
 $ git remote remove origin
 ```
 
-And delete the `.github` folder as you don't need it.
+And delete the [`.github`](./.github) folder as you don't need it.
 
 Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
 
@@ -72,7 +72,7 @@ Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
 OR
 </h3>
 
-Press _Ctrl+Shift+P_ or _F1_ to Show Command Palette, Search for **Watch Sass** and turn it on. Also search for **Open With Live Server** and turn it on. Doing this will watch all your Sass files for changes and will open the website in your browser to preview live.
+Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd> to Show Command Palette, Search for **Watch Sass** and turn it on. Also search for **Open With Live Server** and turn it on. Doing this will watch all your Sass files for changes and will open the website in your browser to preview live.
 
 ---
 
@@ -80,12 +80,12 @@ Press _Ctrl+Shift+P_ or _F1_ to Show Command Palette, Search for **Watch Sass** 
 
 ### Step 1 - STRUCTURE
 
-Open `index.html` and fill your information, there are 6 sections:
+Open [`index.html`](./index.html) and fill your information, there are 6 sections:
 
 ### Head Section
 
 - Add a title to your Portfolio website within the `<title>` tag.
-- Add some keywords and description to your Portfolio website as directed in the `index.html` file.
+- Add some keywords and description to your Portfolio website as directed in the [`index.html`](./index.html) file.
 
 ```html
 <!-- Title: add your Portfolio websites's title here -->
@@ -116,15 +116,17 @@ Open `index.html` and fill your information, there are 6 sections:
       <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
     </p>
   </section>
-  <a href="#about" class="scroll-down-link"> <div class="scroll-down"></div></a>
+  <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+    <div class="scroll-down"></div>
+  </a>
 </div>
 <!-- /END Hero Section -->
 ```
 
 ### About Section
 
-- On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside `assets/` folder.
-  - Recommended size for your profile image is (450 x 450px).
+- On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside [`assets/`](./assets) folder.
+  - Recommended size for your profile image is (_450 x 450px_).
 - On `<p>` tag with class-name `.about-wrapper__info-text`, include information about you, I recommend to use 2 paragraphs in order to work well and a maximum of 3 paragraphs.
 - On last `<a>` tag, include your resume url on `href` attribute.
 
@@ -158,14 +160,14 @@ Open `index.html` and fill your information, there are 6 sections:
 
 - Each project lives inside `row` class.
 - On `<h3>` tag with class-name `.project-wrapper__text-title`, include your project title.
-- On `<p>` tag with `loremp ipsum` text, include your project information.
+- On `<p>` tag with `loremp ipsum...` text, include your project information.
 - On first `<a>` tag, put your project url on `href` attribute.
 - On second `<a>` tag, put your project repository url on `href` attribute.
 
 ---
 
 - Inside `<div>` tag with class-name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url on `href` attribute of `<a>` tag.
-- Recommended size for project image (1366 x 767px), your project image must live in `assets/` folder. You can remove the default images and replace them with yours.
+- Recommended size for project image (_1366 x 767px_), your project image must live in [`assets/`](./assets) folder. You can remove the default images and replace them with yours.
 
 ```html
 <!--Projects Section-->
@@ -234,7 +236,7 @@ Open `index.html` and fill your information, there are 6 sections:
 
 - Put your social media link on each `<a>` links.
 - If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) to put the corresponding additional social icon classNames.
-- You can delete or add as many `a` links your want.
+- You can delete or add as many `<a>` links your want.
 
 ```html
 <!-- Footer Section -->
@@ -266,7 +268,7 @@ Open `index.html` and fill your information, there are 6 sections:
 
 Change the color theme of the website ( choose 2 colors to create a gradient ):
 
-Go to `style/base/_variables.scss` and only change the values on these properties `$main-color` and `$secondary-color` to your prefered HEX color.
+Go to [`style/base/_variables.scss`](./style/base/_variables.scss) and only change the values on these properties `$main-color` and `$secondary-color` to your prefered HEX color.
 
 Save the `.scss` file so that the **Live Sass Compiler** extension compiles it to `.css`.
 
@@ -281,8 +283,8 @@ $secondary-color: #5b86e5;
 ---
 
 - You can clear the README.md file and add you own readme to it.
-- Also you don't need to push the `style` folder, so you can add `style` to `.gitignore` file to ignore it while pushing it to the repo.
-- Delete the file `CNAME` before you push it.
+- Also you don't need to push the [`style`](./style) folder, so you can add [`style`](./style) to [`.gitignore`](./.gitignore) file to ignore it while pushing it to the repo.
+- Delete the file [`CNAME`](./CNAME) before you push it.
 
 ---
 
