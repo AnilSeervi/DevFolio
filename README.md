@@ -5,7 +5,7 @@
 ## A Modern Portfolio Template for Developers!
 
 <h2 align="center">
-  <img src="assets/devfolio.gif" alt="Devfolio" width="1905px" />
+  <img src="assets/devfolio.gif" alt="Devfolio" />
 </h2>
 
 ## Features
