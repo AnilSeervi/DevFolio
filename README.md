@@ -235,7 +235,7 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ### Footer Section
 
 - Put your social media link on each `<a>` links.
-- If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) to put the corresponding additional social icon classNames.
+- If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/icons) to put the corresponding additional social icon classNames.
 - You can delete or add as many `<a>` links your want.
 
 ```html
