@@ -92,19 +92,19 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ```html
 <!-- Hero Section -->
 <div id="hero">
-	<section class="container">
-		<h1 class="hero-title">
-			Hi, my name is <span class="text-color-main name">Your Name</span>
-			<br />
-			I'm the Unknown Developer.
-		</h1>
-		<p class="hero-cta">
-			<a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-		</p>
-	</section>
-	<a href="#about" class="scroll-down-link" aria-label="scroll-down">
-		<div class="scroll-down"></div>
-	</a>
+  <section class="container">
+    <h1 class="hero-title">
+      Hi, my name is <span class="text-color-main name">Your Name</span>
+      <br />
+      I'm the Unknown Developer.
+    </h1>
+    <p class="hero-cta">
+      <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+    </p>
+  </section>
+  <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+    <div class="scroll-down"></div>
+  </a>
 </div>
 <!-- /END Hero Section -->
 ```
@@ -119,25 +119,25 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ```html
 <!-- About Section -->
 <section id="about">
-	<div class="container">
-		<h2 class="section-title">About Me</h2>
-		<div class="row about-wrapper">
-			<div class="about-wrapper__image">
-				<img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
-			</div>
-			<div class="about-wrapper__info">
-				<p class="about-wrapper__info-text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				</p>
-				<p class="about-wrapper__info-text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				</p>
-				<span class="about-wrapper__cta">
-					<a href="#" class="cta-btn cta-btn--resume">View Resume</a>
-				</span>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="row about-wrapper">
+      <div class="about-wrapper__image">
+        <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
+      </div>
+      <div class="about-wrapper__info">
+        <p class="about-wrapper__info-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="about-wrapper__info-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span class="about-wrapper__cta">
+          <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+        </span>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- /END About Section -->
 ```
@@ -207,13 +207,13 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ```html
 <!-- Contact Section -->
 <section id="contact">
-	<div class="container">
-		<h2 class="section-title">Contact</h2>
-		<div class="contact-wrapper">
-			<p class="contact-wrapper__text">[Put your call to action here]</p>
-			<a href="mailto:" class="cta-btn cta-btn--resume">Call to Action</a>
-		</div>
-	</div>
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-wrapper">
+      <p class="contact-wrapper__text">[Put your call to action here]</p>
+      <a href="mailto:" class="cta-btn cta-btn--resume">Call to Action</a>
+    </div>
+  </div>
 </section>
 <!-- END Contact Section -->
 ```
@@ -227,25 +227,25 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ```html
 <!-- Footer Section -->
 <footer class="footer">
-	...
-	<div class="social-links">
-		<a href="#!" target="_blank">
-			<i class="fa-brands fa-twitter"></i>
-		</a>
-		<a href="#!" target="_blank">
-			<i class="fa-brands fa-instagram"></i>
-		</a>
-		<a href="#!" target="_blank">
-			<i class="fa-brands fa-codepen"></i>
-		</a>
-		<a href="#!" target="_blank">
-			<i class="fa-brands fa-linkedin"></i>
-		</a>
-		<a href="#!" target="_blank">
-			<i class="fa-brands fa-github"></i>
-		</a>
-	</div>
-	...
+  ...
+  <div class="social-links">
+    <a href="#!" target="_blank">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="#!" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#!" target="_blank">
+      <i class="fa-brands fa-codepen"></i>
+    </a>
+    <a href="#!" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="#!" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+  ...
 </footer>
 <!-- END Footer Section -->
 ```
