@@ -30,22 +30,7 @@ Here's a **Complete Guide** to walk you through the process of setting your own 
 
 You'll need [VSCode](https://code.visualstudio.com/) and [Git](https://git-scm.com/) installed on your computer.
 
-You'll also need these two extensions [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) installed in your VSCode.
-
-Press <kbd>F1</kbd> and Search for _Open Settings(JSON)_ and paste the below code before the closing braces( `}` ).
-
-```json
-"liveSassCompile.settings.generateMap": false,
-"liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "savePath": "/css",
-      "extensionName": ".css"
-    }
-  ],
-"liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-
-```
+You'll also need these two extensions [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) installed in your VSCode. You will be automatically promted to install these extensions once you open this project in VSCode.
 
 ---
 
@@ -66,13 +51,14 @@ $ git remote remove origin
 
 And delete the [`.github`](./.github) folder as you don't need it.
 
-Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
+Now Simply click on **Watch Sass** in the bottom status bar to watch all your `.scss` file chages and compile them to vanilla `.css`.
+And also open `index.html`, right click inside the file and select _Show Preview_ to start a preview at `http://127.0.0.1:3000/`.
 
 <h3 align="center">
 OR
 </h3>
 
-Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd> to Show Command Palette, Search for **Watch Sass** and turn it on. Also search for **Open With Live Server** and turn it on. Doing this will watch all your Sass files for changes and will open the website in your browser to preview live.
+Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd> to Show Command Palette, Search for **Live Sass: Watch Sass** and turn it on. Also search for **Live Preview: Start Server** and turn it on. Doing this will watch all your Sass files for changes and will spin up a live server for you at `http://127.0.0.1:3000/`.
 
 ---
 
@@ -106,19 +92,19 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ```html
 <!-- Hero Section -->
 <div id="hero">
-  <section class="container">
-    <h1 class="hero-title">
-      Hi, my name is <span class="text-color-main name">Your Name</span>
-      <br />
-      I'm the Unknown Developer.
-    </h1>
-    <p class="hero-cta">
-      <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-    </p>
-  </section>
-  <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-    <div class="scroll-down"></div>
-  </a>
+	<section class="container">
+		<h1 class="hero-title">
+			Hi, my name is <span class="text-color-main name">Your Name</span>
+			<br />
+			I'm the Unknown Developer.
+		</h1>
+		<p class="hero-cta">
+			<a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+		</p>
+	</section>
+	<a href="#about" class="scroll-down-link" aria-label="scroll-down">
+		<div class="scroll-down"></div>
+	</a>
 </div>
 <!-- /END Hero Section -->
 ```
@@ -133,25 +119,25 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ```html
 <!-- About Section -->
 <section id="about">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <div class="row about-wrapper">
-      <div class="about-wrapper__image">
-        <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
-      </div>
-      <div class="about-wrapper__info">
-        <p class="about-wrapper__info-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p class="about-wrapper__info-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <span class="about-wrapper__cta">
-          <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
-        </span>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<h2 class="section-title">About Me</h2>
+		<div class="row about-wrapper">
+			<div class="about-wrapper__image">
+				<img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
+			</div>
+			<div class="about-wrapper__info">
+				<p class="about-wrapper__info-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+				<p class="about-wrapper__info-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+				<span class="about-wrapper__cta">
+					<a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+				</span>
+			</div>
+		</div>
+	</div>
 </section>
 <!-- /END About Section -->
 ```
@@ -221,13 +207,13 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ```html
 <!-- Contact Section -->
 <section id="contact">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-wrapper">
-      <p class="contact-wrapper__text">[Put your call to action here]</p>
-      <a href="mailto:" class="cta-btn cta-btn--resume">Call to Action</a>
-    </div>
-  </div>
+	<div class="container">
+		<h2 class="section-title">Contact</h2>
+		<div class="contact-wrapper">
+			<p class="contact-wrapper__text">[Put your call to action here]</p>
+			<a href="mailto:" class="cta-btn cta-btn--resume">Call to Action</a>
+		</div>
+	</div>
 </section>
 <!-- END Contact Section -->
 ```
@@ -235,31 +221,31 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ### Footer Section
 
 - Put your social media link on each `<a>` links.
-- If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) to put the corresponding additional social icon classNames.
+- If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/icons) to put the corresponding additional social icon classNames.
 - You can delete or add as many `<a>` links your want.
 
 ```html
 <!-- Footer Section -->
 <footer class="footer">
-  ...
-  <div class="social-links">
-    <a href="#!" target="_blank">
-      <i class="fa fa-twitter"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-instagram"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-codepen"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-linkedin"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-github"></i>
-    </a>
-  </div>
-  ...
+	...
+	<div class="social-links">
+		<a href="#!" target="_blank">
+			<i class="fa-brands fa-twitter"></i>
+		</a>
+		<a href="#!" target="_blank">
+			<i class="fa-brands fa-instagram"></i>
+		</a>
+		<a href="#!" target="_blank">
+			<i class="fa-brands fa-codepen"></i>
+		</a>
+		<a href="#!" target="_blank">
+			<i class="fa-brands fa-linkedin"></i>
+		</a>
+		<a href="#!" target="_blank">
+			<i class="fa-brands fa-github"></i>
+		</a>
+	</div>
+	...
 </footer>
 <!-- END Footer Section -->
 ```

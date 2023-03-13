@@ -1,70 +1,70 @@
 .footer {
-  background-color: $dark-grey;
-  padding: 4.8rem 0;
-  &__text {
-    font-size: 1.3rem;
-    color: darken($white-color, 50%);
-    a {
-      font-size: 1.3rem;
-      color: darken($white-color, 50%);
-      transition: all 0.2s ease-in-out;
-      display: inline-block;
-      &:hover,
-      &:active {
-        color: $primary-color;
-      }
-    }
-  }
+	background-color: $dark-grey;
+	padding: 4.8rem 0;
+	&__text {
+		font-size: 1.3rem;
+		color: darken($white-color, 30%);
+		a {
+			font-size: 1.3rem;
+			color: darken($white-color, 25%);
+			transition: all 0.2s ease-in-out;
+			display: inline-block;
+			&:hover,
+			&:active {
+				color: $primary-color;
+			}
+		}
+	}
 
-  & hr {
-    margin: 1rem auto;
-    border: 0;
-    width: 50%;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
-  }
+	& hr {
+		margin: 1rem auto;
+		border: 0;
+		width: 50%;
+		border-top: 2px solid rgba(255, 255, 255, 0.1);
+	}
 }
 
 .social-links {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  a {
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: $white-color;
-    width: 5rem;
-    height: 5rem;
-    margin: $default-font-size $default-font-size;
-    transition: all ease 0.2s;
-    i {
-      transition: all ease-in-out 0.2s;
-    }
-    &:hover {
-      transform: scale(1.1) translateY(-2px);
-      .fa-twitter {
-        color: #00acee;
-      }
-      .fa-instagram {
-        color: #c13584;
-      }
-      .fa-linkedin {
-        color: #4875b4;
-      }
-      .fa-codepen {
-        color: #212121;
-      }
-    }
-  }
+	a {
+		font-size: 3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: $white-color;
+		width: 5rem;
+		height: 5rem;
+		margin: $default-font-size $default-font-size;
+		transition: all ease 0.2s;
+		i {
+			transition: all ease-in-out 0.2s;
+		}
+		&:hover {
+			transform: scale(1.1) translateY(-2px);
+			.fa-twitter {
+				color: #00acee;
+			}
+			.fa-instagram {
+				color: #c13584;
+			}
+			.fa-linkedin {
+				color: #4875b4;
+			}
+			.fa-codepen {
+				color: #212121;
+			}
+		}
+	}
 }
 
 .back-to-top i {
-  color: $white-color;
-  margin: 1rem 0 $default-font-size;
-  transition: all 200ms ease;
+	color: $white-color;
+	margin: 1rem 0 $default-font-size;
+	transition: all 200ms ease;
 
-  &:hover {
-    transform: translateY(-2px);
-  }
+	&:hover {
+		transform: translateY(-2px);
+	}
 }
