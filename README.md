@@ -30,22 +30,7 @@ Here's a **Complete Guide** to walk you through the process of setting your own 
 
 You'll need [VSCode](https://code.visualstudio.com/) and [Git](https://git-scm.com/) installed on your computer.
 
-You'll also need these two extensions [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) installed in your VSCode.
-
-Press <kbd>F1</kbd> and Search for _Open Settings(JSON)_ and paste the below code before the closing braces( `}` ).
-
-```json
-"liveSassCompile.settings.generateMap": false,
-"liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "savePath": "/css",
-      "extensionName": ".css"
-    }
-  ],
-"liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-
-```
+You'll also need these two extensions [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) installed in your VSCode. You will be automatically promted to install these extensions once you open this project in VSCode.
 
 ---
 
@@ -66,13 +51,14 @@ $ git remote remove origin
 
 And delete the [`.github`](./.github) folder as you don't need it.
 
-Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
+Now Simply click on **Watch Sass** in the bottom status bar to watch all your `.scss` file chages and compile them to vanilla `.css`.
+And also open `index.html`, right click inside the file and select _Show Preview_ to start a preview at `http://127.0.0.1:3000/`.
 
 <h3 align="center">
 OR
 </h3>
 
-Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd> to Show Command Palette, Search for **Watch Sass** and turn it on. Also search for **Open With Live Server** and turn it on. Doing this will watch all your Sass files for changes and will open the website in your browser to preview live.
+Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd> to Show Command Palette, Search for **Live Sass: Watch Sass** and turn it on. Also search for **Live Preview: Start Server** and turn it on. Doing this will watch all your Sass files for changes and will spin up a live server for you at `http://127.0.0.1:3000/`.
 
 ---
 
@@ -235,7 +221,7 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ### Footer Section
 
 - Put your social media link on each `<a>` links.
-- If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) to put the corresponding additional social icon classNames.
+- If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/icons) to put the corresponding additional social icon classNames.
 - You can delete or add as many `<a>` links your want.
 
 ```html
@@ -244,19 +230,19 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
   ...
   <div class="social-links">
     <a href="#!" target="_blank">
-      <i class="fa fa-twitter"></i>
+      <i class="fa-brands fa-twitter"></i>
     </a>
     <a href="#!" target="_blank">
-      <i class="fa fa-instagram"></i>
+      <i class="fa-brands fa-instagram"></i>
     </a>
     <a href="#!" target="_blank">
-      <i class="fa fa-codepen"></i>
+      <i class="fa-brands fa-codepen"></i>
     </a>
     <a href="#!" target="_blank">
-      <i class="fa fa-linkedin"></i>
+      <i class="fa-brands fa-linkedin"></i>
     </a>
     <a href="#!" target="_blank">
-      <i class="fa fa-github"></i>
+      <i class="fa-brands fa-github"></i>
     </a>
   </div>
   ...

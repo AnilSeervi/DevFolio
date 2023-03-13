@@ -14,6 +14,8 @@ Have fun creating your portfolio on this template!!! -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Title: add your Portfolio websites's title here -->
     <title>[Your name here] | Developer</title>
@@ -63,12 +65,18 @@ Have fun creating your portfolio on this template!!! -->
     />
 
     <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <script src="./javascript/scrollreveal.min.js"></script>
+    <script defer src="./javascript/scrollreveal.min.js"></script>
     <script
       defer
       type="text/javascript"
@@ -82,13 +90,13 @@ Have fun creating your portfolio on this template!!! -->
       src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
       function gtag() {
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
-      gtag("js", new Date());
+      gtag("js", new Date())
 
-      gtag("config", "UA-122228201-4");
+      gtag("config", "UA-122228201-4")
     </script>
     <!-- End of Google Analytics -->
   </head>
@@ -121,6 +129,8 @@ Have fun creating your portfolio on this template!!! -->
               class="img-fluid"
               src="./assets/profile.png"
               alt="Profile Image"
+              width="450"
+              height="350"
             />
           </div>
           <div class="about-wrapper__info">
@@ -182,6 +192,8 @@ Have fun creating your portfolio on this template!!! -->
                     src="./assets/project.png"
                     class="img-fluid"
                     alt="Project Image"
+                    width="1366"
+                    height="767"
                   />
                 </div>
               </a>
@@ -220,6 +232,8 @@ Have fun creating your portfolio on this template!!! -->
                     src="./assets/project.png"
                     class="img-fluid"
                     alt="Project Image"
+                    width="1366"
+                    height="767"
                   />
                 </div>
               </a>
@@ -258,6 +272,8 @@ Have fun creating your portfolio on this template!!! -->
                     src="./assets/project.png"
                     class="img-fluid"
                     alt="Project Image"
+                    width="1366"
+                    height="767"
                   />
                 </div>
               </a>
@@ -294,7 +310,7 @@ Have fun creating your portfolio on this template!!! -->
             rel="noopener noreferrer"
             aria-label="twitter"
           >
-            <i class="fa fa-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
           </a>
           <a
             href="#!"
@@ -302,7 +318,7 @@ Have fun creating your portfolio on this template!!! -->
             rel="noopener noreferrer"
             aria-label="instagram"
           >
-            <i class="fa fa-instagram"></i>
+            <i class="fa-brands fa-instagram"></i>
           </a>
           <a
             href="#!"
@@ -310,7 +326,7 @@ Have fun creating your portfolio on this template!!! -->
             rel="noopener noreferrer"
             aria-label="codepen"
           >
-            <i class="fa fa-codepen"></i>
+            <i class="fa-brands fa-codepen"></i>
           </a>
           <a
             href="#!"
@@ -318,7 +334,7 @@ Have fun creating your portfolio on this template!!! -->
             rel="noopener noreferrer"
             aria-label="linkedin"
           >
-            <i class="fa fa-linkedin"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
             href="#!"
@@ -326,7 +342,7 @@ Have fun creating your portfolio on this template!!! -->
             rel="noopener noreferrer"
             aria-label="github"
           >
-            <i class="fa fa-github"></i>
+            <i class="fa-brands fa-github"></i>
           </a>
         </div>
         <hr />
@@ -344,7 +360,7 @@ Have fun creating your portfolio on this template!!! -->
     <!-- END Footer Section -->
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear()
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
